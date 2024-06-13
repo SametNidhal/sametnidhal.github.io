@@ -4,8 +4,9 @@
   "icons": [
     {
       "src": "myfavicon.ico",
-      "sizes": "5x5 5x5 5x5 5x5",
+      "sizes": "5x5",
       "type": "image/x-icon"
+
     },
     {
       "src": "logo192.png",
