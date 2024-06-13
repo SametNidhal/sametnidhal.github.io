@@ -1,0 +1,44 @@
+.project {
+  display: flex;
+  align-items: flex-start; /* Align items vertically */
+  padding: 2em;
+  margin: 0;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__image {
+  width: 70px; /* or any size you prefer */
+  height: auto;
+  margin-right: 1em; /* Adjust space between image and name */
+}
+
+/* Now we style the project name and description to take the remaining space */
+.project__name-description {
+  flex-grow: 1;
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack {
+  display: flex;
+
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin-top: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
