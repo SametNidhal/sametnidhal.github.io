@@ -25,6 +25,7 @@ const Navbar = () => {
               href='#projects'
               onClick={toggleNavList}
               className='link link--nav'
+              id='text-behavior'
             >
               experiences
             </a>
@@ -37,6 +38,7 @@ const Navbar = () => {
               href='#skills'
               onClick={toggleNavList}
               className='link link--nav'
+              id='text-behavior'
             >
               Skills
             </a>
@@ -49,6 +51,7 @@ const Navbar = () => {
               href='#contact'
               onClick={toggleNavList}
               className='link link--nav'
+              id='text-behavior'
             >
               Contact
             </a>

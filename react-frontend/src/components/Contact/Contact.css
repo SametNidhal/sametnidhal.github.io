@@ -2,3 +2,45 @@
   flex-direction: column;
   margin-top: 3em;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 22em; /* Adjusted to make the form wider */
+  margin: 2em auto;
+  box-shadow: var(--shadow);
+  padding: 2em;
+}
+
+/* The rest of your CSS remains the same */
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px; /* Adjust as needed */
+  resize: vertical;
+}
+
+.contact-form__submit {
+  padding: 1em 2em;
+  background-color: var(--clr-primary); /* Use your primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form__submit:hover {
+  background-color: var(--clr-primary-dark); /* Use a darker shade of your primary color */
+}
+
+#text-behavior{
+  text-transform: capitalize;
+  text-align: center;
+}
