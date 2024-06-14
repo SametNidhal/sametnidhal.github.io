@@ -1,1 +1,2 @@
 rootProject.name = 'portfolio'
+implementation group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.2.0.RELEASE'

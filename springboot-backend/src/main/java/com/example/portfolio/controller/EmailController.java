@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+* REST controller for handling email sending requests.
+ */
 @RestController
 @RequestMapping("/api")
 public class EmailController {
@@ -18,7 +21,7 @@ public class EmailController {
 
     @PostMapping("/send-email")
     public ResponseEntity<?> sendEmail(@RequestBody EmailRequest emailRequest) {
-        mailService.sendEmail("a@gmail.com", emailRequest.getSubject(), emailRequest.getMessage());
+        mailService.sendEmail(emailRequest.getFrom(), emailRequest.getTo(), emailRequest.getSubject(), emailRequest.getMessage());
         return ResponseEntity.ok("Email Email sent successfully");
     }
 }

@@ -6,6 +6,9 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service class for sending emails.
+ */
 @Service
 public class MailServiceImpl implements MailService {
 
@@ -13,9 +16,9 @@ public class MailServiceImpl implements MailService {
     private JavaMailSender mailSender;
 
     @Override
-    public void sendEmail(String to, String subject, String content) {
+    public void sendEmail(String from, String to, String subject, String content) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("a@gmail.com");
+        message.setFrom(from);
         message.setTo(to);
         message.setSubject(subject);
         message.setText(content);
