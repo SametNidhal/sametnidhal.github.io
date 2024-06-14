@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-react-spring-portfolio/static/css/main.a87cd3c1.css",
-    "main.js": "/my-react-spring-portfolio/static/js/main.a02d6993.js",
+    "main.css": "/my-react-spring-portfolio/static/css/main.21334549.css",
+    "main.js": "/my-react-spring-portfolio/static/js/main.ec2bd708.js",
     "index.html": "/my-react-spring-portfolio/index.html",
-    "main.a87cd3c1.css.map": "/my-react-spring-portfolio/static/css/main.a87cd3c1.css.map",
-    "main.a02d6993.js.map": "/my-react-spring-portfolio/static/js/main.a02d6993.js.map"
+    "main.21334549.css.map": "/my-react-spring-portfolio/static/css/main.21334549.css.map",
+    "main.ec2bd708.js.map": "/my-react-spring-portfolio/static/js/main.ec2bd708.js.map"
   },
   "entrypoints": [
-    "static/css/main.a87cd3c1.css",
-    "static/js/main.a02d6993.js"
+    "static/css/main.21334549.css",
+    "static/js/main.ec2bd708.js"
   ]
 }
