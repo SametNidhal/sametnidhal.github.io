@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { contact } from '../../portfolio'
+import { contact } from '../../portfolio';
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from '../../config';
+import Alert from '@mui/material/Alert';
 import './Contact.css'
 
 const Contact = () => {
@@ -34,12 +35,12 @@ const Contact = () => {
     <section className='section contact center' id='contact'>
 
       <h2 className='section__title'>Let's get in touch</h2>
-      {submitted && <div className="success-message">Your message has been sent successfully!</div>}
+      {submitted && <Alert severity="success">Message sent! We’ll be in touch soon.</Alert>}
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
-        <input type="text" name="user_name" placeholder="Name" />
-        <input type="email" placeholder="Email" name="user_email" />
-        <textarea name="message" placeholder="Message" />
+        <input type="text" name="user_name" placeholder="Name" required/>
+        <input type="email" placeholder="Email" name="user_email" required/>
+        <textarea name="message" placeholder="Message" required/>
         <button id='text-behavior' type='submit' className='btn btn--outline'>
           Email me
         </button>
